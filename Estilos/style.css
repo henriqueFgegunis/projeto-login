@@ -95,7 +95,7 @@ section#login > div#formulario {
         }
 
         form > div.campo{
-            background-color: #5f2c82 ;
+            background-color:#5f2c5fa1;
             height: 40x;
             border-radius: 5px;
             margin: 5px 0px;
@@ -120,3 +120,16 @@ section#login > div#formulario {
             background-color: #2d6462;
         
            }
+
+           div.campo > span {
+            color: white;
+            background-color: black;
+            border-radius: 50%;
+            }
+
+            div.campo > input {
+                background-color: #49a09d;
+                border-radius: 5px;
+                padding: 3px;
+                width: calc(100% -44px);
+            }
