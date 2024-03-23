@@ -32,7 +32,7 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 250px;
+    width: 300px;
     height: 500px;
     padding: 1.7px;
     box-shadow: 0px 0px 10px black;
@@ -83,11 +83,13 @@ section#login > div#formulario {
 
         section#login > div#formulario> h1 {
             text-align: center;
+            margin-bottom: 10px;
         }
 
         p {
             
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            font-size: 0.8em;
             
         }
