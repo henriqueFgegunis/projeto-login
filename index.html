@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InovaCorp</title>
     <link rel="stylesheet" href="Estilos/style.css">
     <link rel="stylesheet" href="Estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -17,8 +17,6 @@
           'opsz' 24
         }
         
-        
-
       
         </style>
 </head>
@@ -27,7 +25,7 @@
 
     <section id="login">
         <div id="imagem">
-            <h1>Projeto-Login</h1>
+            <h1>InovaCorp</h1>
             <!-- aqui e a imagem na css -->
         </div>
         <div id="formulario">
@@ -39,7 +37,7 @@
                 Faça o login para configurar sua ambientaçao.
 
             </p>
-            <form action="login.php" method="post" autocomplete="on">
+            <form  onsubmit="return fazerLogin();" action="login.php" method="post" autocomplete="on">
                 <div class="campo">
 
                     <span class="material-symbols-outlined">
@@ -75,6 +73,41 @@
         </div>
 
     </section>
+
+
+    <script src="login.js">
+        // Exemplo de sistema de login em JavaScript
+
+// Objeto para simular um banco de dados de usuários
+const usuarios = {
+  'admin': 'senha123',
+  'usuario1': 'senha321'
+};
+
+// Função para validar o login
+function validarLogin(usuario, senha) {
+  return usuarios[usuario] === senha;
+}
+
+// Função chamada quando o usuário submete o formulário de login
+function fazerLogin() {
+  const usuario = document.getElementById('usuario').value;
+  const senha = document.getElementById('senha').value;
+
+  if (validarLogin(usuario, senha)) {
+    // Login bem-sucedido, redireciona para a página principal
+    window.location.href = 'pag1.html';
+  } else {
+    // Login falhou, mostra uma mensagem de erro
+    alert('Usuário ou senha incorretos!');
+  }
+
+  // Previne o formulário de ser submetido e a página recarregada
+  return false;
+}
+
+    </script>
+ 
 
 </body>
 
